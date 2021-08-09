@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title>Overview: Tree Canopy Update</title>
+		<link rel="stylesheet" href="styles.css" type="text/css"/>
+		<script src = "parks.js"></script>
+	</head>
+	<body>
+		<div class="topnav">
+     <a class="active" href="index.html">OVERVIEW</a>
+     <a href="map.html">MAP</a>
+     <a href="tables.htm">TABLES</a>
+		 <img src="images/Logos_UW_MPT.png" style="height:55px; float:right">
+    </div>
+		<div class="container">
+			<img src="images/PugetPark2.jpg" style="display:block; margin-left:auto; margin-right:auto; width:100%">
+			<div class="centered"><h1>Metro Parks Tacoma</h1><h3>Tree Canopy Cover Plan<br> Progress Report</h3></div>
+		</div>
+		<div class="flex-container">
+			<div>
+				<h3>OVERVIEW</h3>
+				<p>A robust urban tree canopy is essential to the health of the city of Tacoma. Research shows it provides myriad benefits ranging across environmental, economic and social spectra. Metro Parks Tacoma manages the majority of Tacoma’s urban forest and is actively increasing its overall tree canopy coverage. Midway through a 20-year <b>Canopy Cover Plan</b>, Metro Parks Tacoma is increasing its overall tree canopy cover to <b>66 percent by the year 2030</b>. Metro Parks Tacoma asked the University of Washington Tacoma to analyze raw data with four goals:</p>
+				<p style="padding-left: 2em; padding-right: 2em">1. Measure the change in tree canopy coverage over time to verify that Metro Parks Tacoma is on track.<br>2. Identify areas of most and least tree canopy growth over time.<br>3. Identify areas that could rapidly increase the tree canopy.<br>4. Ensure all of Tacoma's residents are benefiting equitably.</p>
+				<p>The full research paper can be found <a href="paper.pdf">here</a>.</p>
+			</div>
+			<div>
+				<h4 style="margin-bottom: -35px">Findings</h4>
+				<div class="row">
+					<a href="tables.htm"><img class="img" src="images/TreeCanopy_Overall.png" style="margin-top:40px"></a><br>
+					<p>The overall Tree Canopy Cover for Metro Parks Tacoma’s properties was <b>61.42 percent</b> in 2017. This is up from 56.91 percent in 2011 and represents an annual increase of 0.75 percent. Applying that growth rate over 19 years predicts the tree canopy cover will surpass the plan’s goal of 66 percent by the year 2024, years ahead of schedule.</p><p>While only two observations are a poor basis for establishing a trend, it is reassuring to see such a strong start to the Tree Canopy Cover Plan.</p><p>Additional details are available on the <a href="tables.htm">Tables tab</a>.</p>
+				</div>
+				<div class="row">
+					<a href="map.html"><img class="img" src="images/TCC.PNG"></a><br>
+					<p>Areas of most and least growth are broken down by each of Metro Parks Tacoma's 84 parks. Each park has a linear forecast of its tree canopy cover percentage for the year 2030 based on its annual growth rate observed during the study. Comparing each park’s forecast to goal percentages, 24 parks will not reach their targets. The shortage for these parks is listed in acres on the tables allowing Metro Parks Tacoma’s arborist to concentrate on larger areas, if appropriate. </p><p>However, the total shortage equates to only 1.26 percent of the portfolio studied. A 98 percent grade may prove adequate for the Park Board.</p><p>Details are available on the <a href="tables.htm">Tables tab</a>.</p>
+				</div>
+				<div class="row">
+					<a href="map.html"><img class="img" src="images/NDVI.PNG"></a><br>
+					<p>The healthier areas (shown in green) of the NDVI analysis are prime targets for accelerating tree canopy growth in parks not forecasted to reach their goals. Very healthy and moderately healthy areas not already planted with maturing trees are the best zones to consider new tree growth. With additional support, unhealthy zones (shown in orange) can very quickly increase tree canopy cover over previously bare or shrubby terrain. Inanimate areas (shown in red) are poor choices for increasing tree canopy cover due to the cost of removing impervious surfaces or draining ponds.</p><p>Visual surveys of areas for quick tree canopy growth are available on the <a href="map.html">Map tab</a>.</p>
+				</div>
+				<div class="row">
+					<a href="tables.htm"><img class="img" src="images/Equity_Chart.png"></a>
+					<p>Tacoma’s Equity/Opportunity Index is one of the primary tools that city staff, community members, partners, and other decision-makers use to improve access to opportunities for all Tacoma residents. The Index highlights successes and obstacles connected to Accessibility, Livability, Education, Economy, and Environmental Health.</p><p>HI Equity/Opportunity represents locations that have access to better opportunities to succeed and excel in life. The indicators include high-performing schools, access to adequate transportation, safe neighborhoods, and sustainable employment. In contrast, LO Equity/Opportunity communities have more obstacles and barriers. These neighborhoods have limited access to institutional or societal investments which limits their quality of life.</p><p>Despite having a lower overall population, <b>HI neighborhoods enjoy twice the tree canopy coverage area than LO neighborhoods</b>. This results from a combination of more parks with more overall space and higher tree canopy cover percentages in the HI neighborhoods as compared to LO neighborhoods. </p><p>Additional details are available on the <a href="tables.htm">Tables tab</a>.</p>
+				</div>
+		 </div>
+		 <div>
+			 <h4>Methodology</h4>
+			 <p>Primary data for this study were Light Detection and Ranging (LiDAR) and 4-band National Agriculture Imagery Program (NAIP) aerial imagery. Both sets of data came from the years 2011 and 2017. ArcGIS Pro was used to conduct analyses and create shapefiles. Leaflet was used to display results on this site.</p>
+			 <p>The red and near-infrared bands of the NAIP imagery were used to develop Normalized Difference Vegetation Index (NDVI) analyses of the parks. The NDVI classified land as healthy or inanimate. Inanimate land and known buildings were used to mask LiDAR analysis to living vegetation. The LiDAR data identified everything that was eight feet tall or taller to create the tree canopy cover shapefile. By comparing the results from 2011 and 2017, it was posible to identify the percentages of tree canopy cover for each year and extrapolate an annual growth rate. This was broken down to each park.</p>
+			 <p>NDVI analysis also provides clues for Metro Parks Tacoma to rapidly grow more tree canopy. The healthier areas on the map on the <a href="map.html">Map tab</a> are prime areas for exploring new growth.</p>
+			 <p>To incorporate the Equity Index, parks were identified by which of three Equity Index neighborhoods they intersected. Parks that spanned more than one Equity Index neighborhood were counted in both. For clarity, the Equity/Opportunity Index's quintiles (very high, high, moderate, low, and very low) were reduced to three categories: HI, MOD, and LO. HI represents the high and very high neighborhoods. LO represents the low and very low neighborhoods. MOD remains a 20 percent buffer in between. Additional details are available on the <a href="tables.htm">Tables tab</a>.</p>
+			 <p>The full research paper can be found <a href="paper.pdf">here</a>.</p>
+		 </div>
+		 <div class="row">
+			 <h4>Automation</h4>
+			  <a href="ArcGIS.tbx"> <img class="img" src="images/arcgis-toolbox.png" style="max-width:5em; margin-top: 20px"></a>
+				<p>An <a href="ArcGIS.tbx">ArcGIS Pro model</a> is available for future analysis of the Metro Parks Tacoma tree canopy cover. When the city of Tacoma conducts future urban forest canopy assessments for their <a href = 'https://www.cityoftacoma.org/government/city_departments/environmentalservices/urban_forestry/urban_forest_management_plan' target = '_blank'><em>30-by-30 Initiative</em></a>, they will provide a shapefile of the city-wide tree canopy cover. Using that shapefile and a current parks boundaries shapefile, a user may quickly create an updated tree canopy feature class (with an accompanying Excel spreadsheet) to compare with the 2011 and 2017 analyses.</p>
+		 </div>
+		</div>
+
+		<p style="font-size:.7em; text-align:center">Special thanks to Renee Opatz at <a href = "https://www.metroparkstacoma.org/"> Metro Parks Tacoma</a>, and Dr. Emma Slager and Dr. Jim Thatcher at the <a href = "https://www.tacoma.uw.edu/uwt/urban-studies/ms-geospatial-technologies">University of Washington Tacoma</a>.<br>NAIP data came from the <a href="https://earthexplorer.usgs.gov/">USGS Earth Explorer</a>.<br>LiDAR data came from <a href = "https://lidarportal.dnr.wa.gov/">Washington State DNR LiDAR Portal</a>.<br>Equity/Opportunity Index data came from the <a href = "https://geohub.cityoftacoma.org/datasets/equity-opportunity-overall-index-2020-1/explore?location=47.243500%2C-122.455000%2C12.41">City of Tacoma GeoHub Portal</a>.<br>Population data came from the <a href = "https://data.census.gov/cedsci/advanced">U.S. Census Bureau</a>.</p>
+
+		<div class="center">
+			<a href="https://saschu-uwt.github.io/portfolio/"><button class="button button1">Back to Portfolio</button></a>
+		</div>
+
+		<!-- Calls the default extent button -->
+		<script src="dist/leaflet.defaultextent.js"></script>
+		<script src="config.js"></script>
+
+</body>
+</html>
