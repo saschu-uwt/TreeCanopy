@@ -75,6 +75,8 @@ var LegendSatellite = L.control({
   position: 'topright'
 });
 
+// My thanks to John on Codepen for this manual legend builder
+// https://codepen.io/haakseth/pen/KQbjdO
 LegendTreeCanopy.onAdd = function(map) {
   var div = L.DomUtil.create("div", "legend");
   div.innerHTML += "<h4>Tree Canopy Cover</h4>";
