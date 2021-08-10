@@ -96,7 +96,7 @@ LegendNDVI.onAdd = function(map) {
 };
 LegendEquity.onAdd = function(map) {
   var div = L.DomUtil.create("div", "legend");
-  div.innerHTML += "<h4>Equity/Opportunity<br>Index Categories 2020</h4>";
+  div.innerHTML += "<h4>Equity/Opportunity<br>Index Categories, 2020</h4>";
   div.innerHTML += '<i style="background: #000000"></i><span>HI (high and very high)</span><br>';
   div.innerHTML += '<i style="background: #808080"></i><span>MOD (moderate)</span><br>';
   div.innerHTML += '<i style="border-color:#bebebe; border-width:2; border-style:solid"></i><span>LO (low and very low)</span><br>';
