@@ -79,14 +79,14 @@ var LegendSatellite = L.control({
 // https://codepen.io/haakseth/pen/KQbjdO
 LegendTreeCanopy.onAdd = function(map) {
   var div = L.DomUtil.create("div", "legend");
-  div.innerHTML += "<h4>Tree Canopy Cover</h4>";
+  div.innerHTML += "<h4>Tree Canopy Cover, 2017</h4>";
   div.innerHTML += '<i style="background: #267300"></i><span>Tree Canopy</span><br>';
   div.innerHTML += '<i style="border-color:#ff0000; border-width:2; border-style:solid"></i><span>Park Boundary</span><br>';
   return div;
 };
 LegendNDVI.onAdd = function(map) {
   var div = L.DomUtil.create("div", "legend");
-  div.innerHTML += "<h4>Normalized Difference<br>Vegetation Index (NDVI)</h4>";
+  div.innerHTML += "<h4>Normalized Difference<br>Vegetation Index, 2017</h4>";
   div.innerHTML += '<i style="background: #007206"></i><span>Very Healthy</span><br>';
   div.innerHTML += '<i style="background: #a4d016"></i><span>Moderately Healthy</span><br>';
   div.innerHTML += '<i style="background: #fcc813"></i><span>Unhealthy</span><br>';
@@ -96,16 +96,16 @@ LegendNDVI.onAdd = function(map) {
 };
 LegendEquity.onAdd = function(map) {
   var div = L.DomUtil.create("div", "legend");
-  div.innerHTML += "<h4>Equity/Opportunity<br>Index Categories</h4>";
-  div.innerHTML += '<i style="background: #000000"></i><span>HI</span><br>';
-  div.innerHTML += '<i style="background: #808080"></i><span>MOD</span><br>';
-  div.innerHTML += '<i style="border-color:#bebebe; border-width:2; border-style:solid"></i><span>LO</span><br>';
+  div.innerHTML += "<h4>Equity/Opportunity<br>Index Categories 2020</h4>";
+  div.innerHTML += '<i style="background: #000000"></i><span>HI (high and very high)</span><br>';
+  div.innerHTML += '<i style="background: #808080"></i><span>MOD (moderate)</span><br>';
+  div.innerHTML += '<i style="border-color:#bebebe; border-width:2; border-style:solid"></i><span>LO (low and very low)</span><br>';
   div.innerHTML += '<i style="border-color:#ff0000; border-width:2; border-style:solid"></i><span>Park Boundary</span><br>';
   return div;
 };
 LegendSatellite.onAdd = function(map) {
   var div = L.DomUtil.create("div", "legend");
-  div.innerHTML += "<h4>Satellite View</h4>";
+  div.innerHTML += "<h4>Satellite View, current</h4>";
   div.innerHTML += '<i style="border-color:#ff0000; border-width:2; border-style:solid"></i><span>Park Boundary</span><br>';
   return div;
 };
