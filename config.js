@@ -178,7 +178,7 @@ function highlightFeature(e) {
 // ...and mouse out
 function resetHighlight(e) {
     geojson.resetStyle(e.target);
-    info.update();
+    // info.update();
 }
 
 
@@ -212,9 +212,9 @@ info.onAdd = function (map) {
 };
 // method that we will use to update the control based on feature properties passed
 info.update = function (props) {
-    this._div.innerHTML = '<h4>Park Data</h4>' +  (props ?
+    this._div.innerHTML = '<h4>Park Data</h4>' +  '<i>Hover over a park for details.<br>Click on a park to zoom in.</i><br><br>' + (props ?
         '<b>' + props.Name + '</b><br/>Size: ' + Math.round((props.Shape_Area)/43560) + ' acres<br/>Tree Canopy: ' + Math.round((props.TreeCanopy_Percent)*100) + '%'
-        : 'Hover over a park for details.<br>Click on a park to zoom in.');
+        : '');
 };
 
 info.addTo(map);
